@@ -5,12 +5,13 @@ phases:
       - "echo Build started on `date`"
       - "echo Building the Docker image..."
       - "docker-compose build"
-      - "docker tag ui-for-agentbuddy-ui-for-deployment_index_result  $IMAGE_REPO_index:$IMAGE_TAG"
+      - "docker tag ui-for-agentbuddy-ui-for-deployment_index_result 836516541378.dkr.ecr.us-east-2.amazonaws.com/ab_index_result:latest"
+      #- "docker tag ui-for-agentbuddy-ui-for-deployment_index_result  $IMAGE_REPO_index:$IMAGE_TAG"
   post_build: 
     commands: 
       - "echo Build completed on `date`"
       - "echo Pushing the Docker image..."
-      - "docker push $IMAGE_REPO_index_result:$IMAGE_TAG"
+      - "docker push 836516541378.dkr.ecr.us-east-2.amazonaws.com/ab_index_result:latest"
   pre_build: 
     commands: 
       - "echo Logging in to Amazon ECR..."
