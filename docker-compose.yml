@@ -1,7 +1,7 @@
 version : '2'
 services :  
   index_result:
-    build : index_result/.
+    build : test/index_result/.
     ports : 
       - "9400:9400"
     container_name : "index_result"
