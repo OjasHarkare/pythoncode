@@ -10,7 +10,7 @@ phases:
     commands: 
       - "echo Build completed on `date`"
       - "echo Pushing the Docker image..."
-      - "docker push $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$IMAGE_REPO_index_result:$IMAGE_TAG"
+      - "docker push 836516541378.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$IMAGE_REPO_index_result:$IMAGE_TAG"
   pre_build: 
     commands: 
       - "echo Logging in to Amazon ECR..."
